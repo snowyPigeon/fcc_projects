@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<style>
+#title {
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h2,
+h3 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+p,
+a,
+li,
+ul {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "article article"
+    "content image"
+    "links links";
+}
+
+#tribute-info {
+  grid-area: article;
+}
+
+#tournament-titles {
+  grid-area: content;
+}
+
+#img-div {
+  grid-area: image;
+}
+
+#further-info {
+  grid-area: links;
+}
+
+figcaption {
+  text-align: center;
+}
+
+</style>
+<html>
+
+<head>
+  <title>A Tribute to Steffi Graf</title>
+</head>
+
+<body>
+<header>
+  <h1 id="title">A Tribute to Steffi Graf</h1>
+</header>
+<div id="main">
+  <article id="tribute-info">
+    <h2>Tennis Career</h2>
+    <p>Steffi Graf is a former professional tennis player who was a dominant figure during the 1980s and 90s. Graf won her first grand slam or major tennis tournament in 1987 at the French Open. In 1988, Graf achieved the Golden Slam winning all four major
+      tournaments and gold at the Olympics in Seoul. The grand slams included the Australian, French, US and Wimbledon Open tournaments.</p>
+    <p>Graf continued her successful career through the 1990s. Graf retired in 1999 following injuries and a defeat at Wimbledon.</p>
+  </article>
+  <section id="tournament-titles">
+    <h2>Grand Slam Singles Titles</h2>
+    <ul id="australian-open-titles">Australian Open
+      <li>1988</li>
+      <li>1989</li>
+      <li>1990</li>
+      <li>1994</li>
+    </ul>
+    <ul id="french-open-titles">French Open
+      <li>1987</li>
+      <li>1988</li>
+      <li>1993</li>
+      <li>1995</li>
+      <li>1996</li>
+      <li>1999</li>
+    </ul>
+    <ul id="us-open-titles">US Open
+      <li>1988</li>
+      <li>1989</li>
+      <li>1993</li>
+      <li>1995</li>
+      <li>1996</li>
+    </ul>
+    <ul id="wimbledon-open-titles">Wimbledon
+      <li>1988</li>
+      <li>1989</li>
+      <li>1991</li>
+      <li>1992</li>
+      <li>1993</li>
+      <li>1995</li>
+      <li>1996</li>
+    </ul>
+    <h2>Grand Slam Doubles Titles</h2>
+    <ul>Wimbledon
+      <li>1988</li>
+      <li>Partner: Gabriella Sabatini</li>
+    </ul>
+
+  </section>
+
+  <div id="img-div">
+    <figure>
+      <img src="https://cdn.britannica.com/41/152041-050-15997ADE.jpg" alt="Image of Steffi Graf holding a racquet and tennis ball" id="image">
+      <figcaption id="img-caption">Steffi Graf</figcaption>
+    </figure>
+  </div>
+  <section id="further-info">
+    <h3>For further information please visit the following links:</h3>
+    <ul>
+      <li>
+        <a href="https://www.britannica.com/biography/Steffi-Graf" target="_blank" id="tribute-link">Encyclopedia Britannica</a></li>
+      <li><a href="http://www.steffi-graf.net" target="_blank" id="tribute-link-2">Steffi Graf.net</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Steffi_Graf_career_statistics" target="_blank" id="tribute-link-3">Wikipedia Steffi Graf Career Statistics</a></li>
+    </ul>
+
+  </section>
+  </div>
+</div>
+</body>
+
+</html>

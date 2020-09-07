@@ -1,0 +1,117 @@
+<style>
+
+
+#name, #email, #number, #dropdown, #gender, button {
+margin: 2px;
+}
+
+label {
+margin: 5px;
+font-family: Arial, Helvetica, sans-serif;
+color: #013220;
+}
+
+p {
+margin: 15px;
+font-family: Arial, Helvetica, sans-serif;
+color: #013220;
+}
+
+input, select, legend, legend.border, button, textarea, hr, fieldset {
+color: #013220;
+border-color: teal;
+border-radius: 8px;
+}
+
+h1 {
+font-family: Verdana, Helvetica, sans-serif;
+color: green;
+margin: 20px;
+}
+
+legend {
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+#main {
+border-width: 5px;
+border-style: ridge;
+border-color: teal;
+border-radius: 20px;
+display: block;
+max-width: 75%;
+}
+
+form {
+margin: 10px;
+}
+
+textarea {
+margin: 10px;
+}
+</style>
+
+<html>
+<head>
+<title>HappyFit Sports Club Survey Form</title>
+</head>
+<body>
+<div id="main">
+<h1 id="title">HappyFit Sports Centre Survey Form</h1>
+<p id="description">The HappyFit Sports Centre would like feedback from club members in order to review the package of activities and competitive events for scheduling. 
+Please provide your name, email address and membership number to receive a £5 credit on your member account as a thank you for your loyalty and help with our new programme of activities.</p>
+<form action="" id="survey-form">
+<label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Name" size="50" maxlength="40"></label><br />
+<label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="name@domain.extension" size="50" maxlength="60"></label><br /> 
+<label id="number-label" for="number">Membership number: <input id="number" type="number" required placeholder="Number" min="0" max="9999"></label><br /> 
+<label id="age-label" for="dropdown">Please select your age range: 
+<select id="dropdown">
+<option value="age1">under 16</option>
+<option value="age2">16 - 18</option>
+<option value="age3">19 - 39</option>
+<option value="age4">40 - 59</option>
+<option value="age5">60 or over</option>
+</select>
+</label>
+<br />
+<label id="gender-label" for="gender">Please select your gender:  
+<select id="gender">
+<option>male</option>
+<option>female</option>
+<option>intersex</option>
+<option>transgender</option></select></label>
+<hr>
+<p>Clubs I attend:</p>
+<label id="activity1-label" for="activity1"><input id="activity1" type="checkbox" name="activity1" value="a1">badminton</label>
+<label id="activity2-label" for="activity2"><input id="activity2" type="checkbox" name="activity2" value="a1">squash</label>
+<label id="activity3-label" for="activity3"><input id="activity3" type="checkbox" name="activity3" value="a1">tennis</label>
+<label id="activity4-label" for="activity4"><input id="activity4" type="checkbox" name="activity4" value="a1">table tennis</label>
+<label id="activity5-label" for="activity5"><input id="activity5" type="checkbox" name="activity5" value="a1">judo</label>
+<label id="activity6-label" for="activity6"><input id="activity6" type="checkbox" name="activity6" value="a1">aerobics</label>
+<p>Events I compete in:</p>
+<label id="competition1-label" for="competition1"><input id="competition1" type="checkbox" name="competition1" value="a1">badminton</label>
+<label id="competition2-label" for="competition2"><input id="competition2" type="checkbox" name="competition2" value="a1">squash</label>
+<label id="competition3-label" for="competition3"><input id="competition3" type="checkbox" name="competition3" value="a1">tennis</label>
+<label id="competition4-label" for="competition4"><input id="competition4" type="checkbox" name="competition4" value="a1">table tennis</label>
+<label id="competition5-label" for="competition5"><input id="competition5" type="checkbox" name="competition5" value="a1">judo</label>
+<p>Events I attend as a spectator:</p>
+<label id="spectate1-label" for="spectate1"><input id="spectate1" type="checkbox" name="spectate1" value="a1">badminton</label>
+<label id="spectate2-label" for="spectate2"><input id="spectate2" type="checkbox" name="spectate2" value="a1">squash</label>
+<label id="spectate3-label" for="spectate3"><input id="spectate3" type="checkbox" name="spectate3" value="a1">tennis</label>
+<label id="spectate4-label" for="spectate4"><input id="spectate4" type="checkbox" name="spectate4" value="a1">table tennis</label>
+<label id="spectate5-label" for="spectate5"><input id="spectate5" type="checkbox" name="spectate5" value="a1">judo</label>
+<hr>
+<fieldset>
+<legend>The HappyFit Sports Centre is considering providing the following new activities. Please select the activity that would interest you the most.</legend>
+<label id="new-1" for="new-activity1"><input id="new-activity1" type="radio" name="new-activities" value="yoga">yoga</label>
+<label id="new-2" for="new-activity2"><input id="new-activity2" type="radio" name="new-activities" value="chair">chair aerobics</label>
+<label id="new-3" for="new-activity3"><input id="new-activity3" type="radio" name="new-activities"value="dancercise">dancercise</label>
+</fieldset>
+<hr>
+<label id="comments-label" for="comments">If you have requests for other new activities, please give your comments below. The box has a 500 character limit.<br />
+<textarea id="comments" name="comments" rows="8" cols="80" maxlength="500" placeholder="Enter your comments here."></textarea></label><br />
+<button type="submit" id="submit">Send form</button>
+</form>
+</div>
+</body>
+</html>
