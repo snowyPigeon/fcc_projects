@@ -1,0 +1,284 @@
+
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Chivo|Titillium+Web&display=swap" rel="stylesheet"> 
+<style>
+@media (min-width: 800px) {
+body {
+display: grid;
+grid-template-areas: 
+"navigation tutorial"
+"footer footer";
+}
+
+#navbar {
+margin: 5px;
+padding-right: 5px;
+min-width: 250px;
+max-width: 300px;
+border-right: 2px dotted gray;
+grid-area: navigation;
+top: 0;
+left: 0;
+position: fixed;
+}
+
+#main-doc {
+padding: 20px;
+grid-area: tutorial;
+margin-left: 300px;
+position: relative;
+}
+
+.nav-link {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+a.sticky {
+display: none;
+}
+
+footer {
+margin-left: 250px;
+}
+}
+
+@media (max-width: 799px){
+.nav-link {
+padding-bottom: 2px;}
+
+a.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+background-color: white;
+}
+
+section {
+padding-top: 12px;
+}
+}
+
+.nav-link {
+display: block;
+border-bottom: 1px dotted gray;
+margin: 1px;
+text-decoration: none;
+}
+
+.nav-link:hover {
+background-color: #e6f3ff;
+}
+
+#navbar {
+padding-top: 5px;
+padding-bottom: 8px;
+}
+
+#nav-headings, #nav-paragraphs, #nav-images, #nav-named {
+display: block;
+padding-left: 10px;
+}
+
+header {
+font-family: 'Titillium Web', sans-serif;
+font-size-adjust: 0.65;
+text-decoration: underline;
+}
+
+p, ul, a {
+font-family: Arial, sans-serif;
+}
+
+#wwwf-caption {
+text-align: right;
+font-size: 80%;
+}
+
+.demo {
+font-family: serif;
+}
+
+footer {
+display: block;
+text-align: center;
+grid-area: footer;
+}
+
+table {
+width: 50%;
+}
+
+table th, table td {
+padding: 5px;
+}
+
+td {
+word-wrap: break-word;
+}
+
+
+</style>
+<title>HTML Documentation</title>
+</head>
+<body id="start">
+<nav id="navbar">
+<header><h1>HTML Documentation</h1>
+</header>
+<a href="#Introduction" class="nav-link">Introduction</a>
+<a href="#History" class="nav-link">History</a>
+<a href="#Basic_Markup_Formatting" class="nav-link">Basic Markup Formatting</a>
+<a href="#The_Head_of_a_Document" class="nav-link">The Head of a Document</a>
+<a href="#The_Body_of_a_Document" class="nav-link" id="body-cat">The Body of a Document</a>
+<a href="#Headings" class="nav-link" id="nav-headings">Headings</a>
+<a href="#Paragraphs" class="nav-link" id="nav-paragraphs">Paragraphs</a>
+<a href="#Images" class="nav-link" id="nav-images">Images</a>
+<a href="#Named_Sections_and_Divs" class="nav-link" id="nav-named">Named Sections and Divs</a>
+</nav>
+<a href="#start" class="sticky">Return to menu</a>
+<main id="main-doc">
+<section class="main-section" id="Introduction">
+<header>Introduction</header>
+<p>This document introduces the key concepts and elements of coding with HTML (Hypertext Markup Language).</p>
+<p>HTML is the most basic building block on a web page. HTML provides the structure and meaning of the the page. 
+Other technologies are used with HTML to describe style, and to extend the functionality of the page. 
+The <i>hypertext</i> refers to the links used on pages which connect with each other.</p>
+<p>By the end of the lesson you will be able to:</p>
+
+<ul>
+<li>Display text and images on a web page</li>
+<li>Use separate text elements to bring some basic style to your page</li>
+<li>Use sections and divs to group your content</li>
+</ul>
+</section>
+<section class="main-section" id="History">
+<header>History</header>
+<p>In the early days of the Internet there was not an easy way to retrieve information. 
+Sir Tim Berners-Lee, a software engineer working at CERN, the large particle physics laboratory near Geneva, Switzerland, 
+created a system for presenting information and connecting pages of information together.</p>
+<p>In March 1989, Berners-Lee made an initial proposal for what would become the web in his document <i>Information Management: A Proposal</i>.</p>
+<p>In September 1990, Berners-Lee began working on the web.</p>
+<p>Berners-Lee wrote "three fundamental technologies that remain the foundation of todays' web ...:</p>
+<ul>
+<li>HTML: HyperText Markup Language. The markup (formatting) for the web.</li>
+<li>URI: Uniform Resource Identifier. 
+A kind of “address” that is unique and used to identify to each resource on the web. 
+It is also commonly called a URL.</li>
+<li>HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web."</li></ul>
+<p id="wwwf-caption">World Wide Web Foundation, 2019</p></section>
+<section class="main-section" id="Basic_Markup_Formatting">
+<header>Basic Markup Formatting</header>
+<p>HTML uses <i>markup</i> to describe how text and other elements should be displayed on a page in a Web browser.
+HTML markup includes special elements such as <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code> and <code>&lt;div&gt;</code>. 
+The majority of elements have an opening and closing tag. 
+A complete pair of tags will look like this: <code>&lt;p&gt;&lt;/p&gt;</code>. The tag name is enclosed in the first tag and a forward slash precedes the tag name in the closing tag. 
+Some tags are self closing such as the <code>&lt;img&gt;</code> tag which is used with a file address for enclosing a link to an image, like in this example: <code>&lt;img src="http://myhomepage.com/images/cat_photo.jpg"&gt;</code>.</p>
+</section>
+<section class="main-section" id="The_Head_of_a_Document">
+<header>The Head of a Document</header>
+<p>The <code>&lt;head&gt;</code> of a document is used for linking to related files, scripts, page window titles and meta-data that the author does not want output to the browser display.</p>
+<p>A typical web page will have a <code>&lt;head&gt;</code> section similar to below:</p>
+<code>&lt;head&gt;</code><br>
+<code>&lt;meta charset="UTF-8"&gt;</code><br>
+ <code>&lt;meta name="description" content="HTML Introduction"&gt;</code><br>
+ <code>&lt;meta name="keywords" content="HTML"&gt;</code><br>
+ <code>&lt;meta name="author" content="A Name"&gt;</code><br>
+<code>&lt;link href="https://fonts.googleapis.com/css?family=Chivo|Titillium+Web&display=swap" rel="stylesheet"&gt; </code><br>
+<code>&lt;link rel="stylesheet" type="text/css" href="homepagestyle.css"&gt;</code><br>
+<code>&lt;style&gt;</code><br>
+<code>p, ul, a {
+font-family: Arial, sans-serif;
+}
+</code><br>
+<code>&lt;style&gt;
+</code><br>
+<code>
+&lt;title&gt;My Homepage&lt;/title&gt;</code><br>
+<code>
+&lt;/head&gt;
+</code>
+<p>The <code>&lt;head&gt;</code> element contains some meta-data, a link reference to an external font source, a link to an external style sheet, an internal style sheet, and the title for the browser window. 
+A font source such as provided by Google can allow you to use a wider range of font faces than those interpreted by a browser by default.</p></section>
+<section class="main-section" id="The_Body_of_a_Document">
+<header>The Body of a Document</header>
+<p>The <code>&lt;body&gt;</code> of the document contains the code for the elements that you wish to be visible. 
+This is where you would insert your content such as text, headings and images.</p>
+<p>A very simple example:</p>
+<code>&lt;body&gt;</code><br>
+<code>&lt;h1&gt;Welcome&lt;/h1&gt;</code><br>
+<code>&lt;p&gt;Hello World!&lt;/p&gt;</code><br>
+<code>&lt;/body&gt;</code>
+<p>In the example above, the web page contains a heading at the largest size - in h1 tags, and some smaller text wrapped in paragraph tags.</p>
+</section>
+<section class="main-section" id="Headings">
+<header>Headings</header>
+<p>Headings on a web page work like titles and sub-titles in a book. 
+In HTML a hierarchical system is used for the main heading and sub headings which decrease in size according to their importance. 
+You should use the h1 tag for your main heading, and you should use h2 tags for your headings of next level importance, and so on.</p>
+<p>In the example below we present the code for the heading and show how it will look without any additional formatting:</p>
+<table><tr><td><code>&lt;h1&gt;The Body&lt;/h1&gt;</code></td><td><h1>The Body</h1></td></tr>
+<tr><td><code>&lt;h2&gt;The Limbs&lt;/h2&gt;</code></td><td><h2>The Limbs</h2></td></tr>
+<tr><td><code>&lt;h3&gt;The Hands&lt;/h3&gt;</code></td><td><h3>The Hands</h3></td></tr>
+<tr><td><code>&lt;h4&gt;The Fingers&lt;/h4&gt;</code></td><td><h4>The Fingers</h4></td></tr>
+<tr><td><code>&lt;h5&gt;The Finger Joints&lt;/h5&gt;</code></td><td><h5>The Finger Joints</h5></td></tr>
+<tr><td><code>&lt;h6&gt;The Finger Tendons&lt;/h6&gt;</code></td><td><h6>The Finger Tendons</h6></td></tr>
+</table>
+</section>
+<section class="main-section" id="Paragraphs">
+<header>Paragraphs</header>
+<p>Most of your text will be enclosed within <code>&lt;p&gt;&lt;/p&gt;</code> tags. 
+Open your text with the opening <code>&lt;p&gt;</code> tag and close your text with the closing <code>&lt;/p&gt;</code> tag. 
+Again, we shall demonstrate how the code appears and how the text should display on the page.</p>
+<table><tr><td><code>&lt;p&gt;My first paragraph. This could be a single sentence or it may span several sentences.&lt;/p&gt;</code></td><td><p class="demo">My first paragraph. 
+This could be a single sentence or it may span several sentences.</p></td></tr>
+<tr><td><code>&lt;p&gt;My second paragraph. This could be a single sentence or it may span several sentences. This will start on a new line.&lt;/p&gt;</code></td><td><p class="demo">My second paragraph.
+This could be a single sentence or it may span several sentences. This will start on a new line.</p></td></tr></table>
+</section>
+<section class="main-section" id="Images">
+<header>Images</header>
+<p>Images can enhance the overall appearance of a page and they can help to break up the text based content.</p>
+<p>If you are working purely on your home computer and have some image files in the same folder as your web page file, 
+you can assign a <i>relative pathname</i> to an image tag, and when you view the html (web page) file in a browser the image should display. 
+If you are working with an online file, then you will need to upload your images as well. If the images and html file are in the same folder, again, you can use a relative link. 
+If your images are hosted somewhere else, then you will need to include the whole path or <i>absolute pathname</i> in order for the image to display.</p>
+<p>Here is an example, with the code on the left and the output on the right:</p>
+<table>
+<tr><td><code>&lt;img src="https://live.staticflickr.com/65535/</code><br>
+<code>50315642467_0beb1d4d81_z.jpg" 
+ style="display:block;width:150" alt="Inside Cover of Arithmetic Book"&gt;</code></td>
+<td><img src="https://live.staticflickr.com/65535/50315642467_0beb1d4d81_z.jpg" 
+style="width:150px" alt="Inside Cover of Arithmetic Book"></td></tr>
+</table>
+<p>We have added some inline (within tag) CSS (Cascading Style Sheets) formatting after the file address in order to control the size of the image displayed.</p>
+<p>In this case, an absolute pathname has been specified for the image address because it exists in a different location to the html file for this page.
+A relative pathname would be of the form <code>"filename.filetype"</code> or possibly <code>"/foldername/filename.filetype"</code>. An absolute pathname will include the whole web address for the file, including https or http.</p>
+<p>Another point of note is the alt text provided within the image tag. 
+It is good practice to include alt text to describe what the image shows, for the benefit of users using screen readers or in case the image does not display.</p>
+</section>
+<section class="main-section" id="Named_Sections_and_Divs">
+<header>Named Sections and Divs</header>
+<p>You can control the structure of your page using <code>&lt;section&gt;</code> and <code>&lt;div&gt;</code> tags wrapped around your content.
+There are additional section elements with more specific names: <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code>. Note that <code>&lt;nav&gt;</code> is used only as a navigation element and a <code>&lt;nav&gt;</code> cannot be nested within another <code>&lt;nav&gt;</code>.</p>
+<p>Here is an example, with the code on the left and the output on the right:</p>
+<table>
+<tr><td><code>&lt;section&gt;&lt;p&gt;This section contains some informative text. This section contains some informative text. &lt;/p&gt;&lt;/section&gt;</code></td>
+<td><section><p>This section contains some informative text. This section contains some informative text. </p></section></td></tr>
+<tr><td><code>&lt;div&gt;&lt;p&gt;This div contains some informative text. This section contains some informative text. &lt;/p&gt;&lt;/div&gt;</code></td>
+<td><div><p>This div contains some informative text. This section contains some informative text. </p></div></td></tr>
+</table>
+<p>Sections and divs can be arranged to sit side by side, in columns, in rows, or within a grid. 
+In modern browsers, the placement of these elements is organised with CSS which is beyond the scope of this lesson.</p>
+</section>
+</main>
+<footer>
+<p>This document uses the following sources:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines</a><br>
+<a href="https://webfoundation.org/about/vision/history-of-the-web/">https://webfoundation.org/about/vision/history-of-the-web/</a><br>
+<a href="https://www.w3schools.com/tags/tag_meta.asp">https://www.w3schools.com/tags/tag_meta.asp</a><br>
+Snowy Pigeon 2019
+</p>
+</footer>
+</body>
+</html>
