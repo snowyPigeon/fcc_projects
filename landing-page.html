@@ -1,0 +1,171 @@
+<style>
+@media (min-width: 800px){
+#desk1, #lap1, #lap2 {
+display: grid;
+grid-template-areas:
+"image text"
+}
+#xc-710, #aspire5, #aspire7 {
+grid-area: image;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+}
+
+@media (max-width: 799px){
+#desk1, #lap1, #lap2 {
+display: flex;
+flex-direction: column;
+}
+iframe {
+max-width: 100%;
+height: auto;
+}
+
+}
+
+
+body {
+background: #000000;
+}
+
+header {
+top: 0px;
+position: -webkit-sticky;
+position: sticky;
+background-color: black;
+padding-top: 10px;
+}
+
+.product-sections {
+padding-top: 240px;
+}
+
+img {
+border-radius: 20px;
+}
+
+#xc-710, #aspire5, #aspire7 {
+max-width: 50%;
+}
+
+#header-img {
+max-width: 100%;
+}
+
+a {
+margin-left: 25px;
+color: #33CCCC;
+}
+
+a:hover {
+margin-left: 25px;
+color: #33FF33;
+}
+
+#nav-bar {
+margin: 5px;
+padding: 5px;
+font-family: 'Source Code Pro', monospace;
+}
+
+iframe {
+border-radius: 20px;
+}
+
+h1, h2, h3, h4 {
+color: #33CCCC;
+font-family: 'Source Code Pro', monospace;
+}
+
+p, label {
+color: #33CCCC;
+font-family: arial;
+}
+
+input {
+margin-left: 5px;
+}
+
+#desk-text, #lap1-text, #lap2-text {
+grid-area: text;
+}
+</style>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+<title>Pigeon Acer Supplies</title>
+</head>
+<body id="start">
+<header id="header"><img src="https://live.staticflickr.com/65535/50315818003_74bbf05d08.jpg" alt="Pigeon Acer Supplies logo" id="header-img">
+<nav id="nav-bar"><a href="#start" class="nav-link">Home</a><a href="#desktops" class="nav-link">Desktops</a><a href="#laptops" class="nav-link">Laptops</a></nav></header>
+<main>
+<div id="front-page">
+<h1>Pigeon Acer Supplies</h1>
+<form action="https://www.freecodecamp.com/email-submit" id="form" name="email-list">
+<label>Sign up for our sales offer emails.<input type="email" id="email" name="email" placeholder="please enter your email address here" required size="30px"></label>
+<input type="submit" id="submit">Sign up</input></form>
+<h2>Our most popular product</h2>
+<h3>Aspire 5 - multi-purpose laptop</h3>
+<h4>One Person, Three Faces, One Aspire 5</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qOitCByRge4" allowfullscreen id="video"></iframe>
+</div>
+<div id="desktops" class="product-sections"><h2>Our Acer Desktop Range</h2>
+<div id="desk1"><a href="https://static.acer.com/up/Resource/Acer/Desktop/Aspire%20XC/Image/20151117/XC-710_sku_main.png" target="_blank">
+<img src="https://live.staticflickr.com/65535/50315817953_ea958352ec.jpg" alt="desktop XC-710 model" id="xc-710"/></a>
+<div id="desk-text">
+<h3>XC-710</h3>
+<p>This is a powerful machine suitable for multiple tasks. The XC-710 features front facing ports for your convenience.</p>
+<h4>Operating System</h4>
+<p>Windows 10 Home</p>
+<h4>Processor</h4>
+<p>Intel Core i5, i5-6400 with 64 bit processing</p>
+<h4>Memory</h4>
+<p>8 GB Standard memory, with a maximum of 16 GB</p>
+<h4>Storage</h4>
+<p>1 TB Hard drive, 128 GB solid state drive, with Optical DVD-Writer</p>
+<h4>Graphics</h4>
+<p>NVIDIA GeForce GTX 745 with memory capacity up to 4 GB</p>
+</div>
+</div>
+</div>
+<div id="laptops" class="product-sections"><h2>Our Acer Laptop Range</h2>
+<div id="lap1"><a href="https://static-ecemea.acer.com/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/s/aspire-5_main_9.png" target="_blank">
+<img src="https://live.staticflickr.com/65535/50316489341_20f5c70019_n.jpg" alt="laptop Aspire 5 model" id="aspire5"/></a>
+<div id="lap1-text">
+<h3>Aspire 5</h3>
+<p>Our most popular model today - a powerful multi-purpose machine capable of supporting your various activities.</p>
+<h4>Operating System</h4>
+<p>Windows 10 Home</p>
+<h4>Processor</h4>
+<p>Intel Core i7, i7-8550U with 64 bit processing</p>
+<h4>Memory</h4>
+<p>8 GB</p>
+<h4>Storage</h4>
+<p>1 TB Hard drive, 256 GB solid state drive</p>
+<h4>Graphics</h4>
+<p>Intel UHD Graphics Shared Memory</p>
+</div>
+</div>
+<div id="lap2"><a href="https://static.acer.com/up/Resource/Acer/Laptops/Aspire_7/photogallery/20190104/Acer-Aspire-7-A715-73G-photogallery-02.png" target="_blank">
+<img src="https://live.staticflickr.com/65535/50316489286_8e054570bb.jpg" alt="laptop Aspire 7 model" id="aspire7" /></a>
+<div id="lap2-text">
+<h3>Aspire 7</h3>
+<p>This is a stylish laptop with an aluminium chassis, a powerful processor and high performance graphics.</p>
+<h4>Operating System</h4>
+<p>Windows 10 Home</p>
+<h4>Processor</h4>
+<p>Intel Core i7, i7-8750H with 64 bit processing</p>
+<h4>Memory</h4>
+<p>8 GB</p>
+<h4>Storage</h4>
+<p>1 TB Hard drive, 256 GB solid state drive</p>
+<h4>Graphics</h4>
+<p>NVIDIA GeForce GTX 1050 with memory capacity up to 4 GB</p>
+</div>
+</div></div>
+</main>
+</body>
+</html>
