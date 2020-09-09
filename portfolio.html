@@ -1,0 +1,196 @@
+<html>
+<head>
+<style>
+@media (min-width: 720px){
+img {
+max-width: 300px;
+height: auto;
+}
+
+#project-tiles {
+margin-left: 5%;
+margin-right: 5%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 100vh;
+}
+
+#welcome-section {
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+}
+
+#contact {
+height: 100vh;
+}
+
+h1 {
+font-size: 50px;
+}
+
+}
+
+@media (min-width: 600px){
+img {
+max-width: 300px;
+height: auto;
+}
+
+
+}
+
+@media (max-width: 599px){
+img {
+max-width: 200px;
+height: auto;
+}
+}
+
+body {
+margin-left: 5%;
+margin-right: 5%;
+}
+
+#welcome-section {
+height: 100vh;
+text-align: center;
+}
+
+#projects {
+text-align: center;
+padding-top: 15px;
+margin-top: 15px;
+}
+
+#contact {
+text-align: center;
+padding-top: 15px;
+}
+
+#navbar {
+top: 0;
+position: -webkit-sticky;
+position: sticky;
+background-color: white;
+text-align: right;
+padding: 5px;
+border: 1px solid SlateGray;
+border-radius: 5px;
+}
+
+h1 {
+text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color: DarkCyan;
+text-shadow: 1px 1px 0 SlateGray;
+}
+
+p, a {
+font-family: Verdana, Geneva, sans-serif;
+color: Black;
+}
+
+a:hover {
+color: DarkCyan;
+}
+
+
+
+.project-tile {
+text-align: center;
+padding: 5px;
+}
+
+.navlink {
+padding-right: 5px;
+padding-left: 5px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-weight: bold;
+font-size: 18px;
+color: DarkCyan;
+border: 1px solid SlateGray;
+border-radius: 5px;
+}
+
+.navlink:hover {
+border: 2px solid SlateGray;
+border-radius: 5px;
+}
+
+#snowy {
+margin: auto;
+width: 250px;
+height: 200px;
+background-color: transparent;
+border-radius: 50%;
+color: gray;
+box-shadow: 5px 5px 5px 5px;
+display: flex;
+}
+
+#pigeon {
+width: 80%;
+height: 80%;
+justify: center;
+border-radius: 50%;
+margin-left: 25px;
+margin-top: 20px;
+}
+
+hr {
+border-top: 10px solid gray;
+border-radius: 5px;
+}
+
+</style>
+<title>Snowy Pigeon's Personal Portfolio</title>
+</head>
+
+<body id="about">
+<nav id="navbar">
+<a href="#about" class="navlink">About</a>
+<a href="#projects" class="navlink">Projects</a>
+<a href="#contact" class="navlink">Contact</a>
+</nav>
+<section id="welcome-section">
+<h1>About Snowy Pigeon</h1>
+<p>I am a student studying for my BSc Computing and IT, specialising in software development. 
+Please check out my recent <a href="https://codepen.io/snowyPigeon/#" id="profile-link" target="_blank">Free Code Camp projects</a> to see what I have been learning in responsive web design.</p>
+
+<p>There are a few projects from my early forays into learning HTML (circa 2008-10) I would like to bring up to date, so these should appear here in the coming months.</p>
+<p>In my university studies I have also enjoyed using Java, and I plan to revisit using this object oriented language.</p>
+
+</section>
+
+<section id="projects">
+<h1>My work so far...</h1>
+<div id="project-tiles">
+<div class="project-tile">
+<a href="https://codepen.io/snowyPigeon/full/WqmaYj"><img src="https://live.staticflickr.com/65535/50323631327_7a53683c07_w.jpg" alt="Tribute Page Thumbnail" id="graf-tribute" /><br>Tribute Page</a>
+</div>
+<div class="project-tile">
+<a href="https://codepen.io/snowyPigeon/full/qebPMQ"><img src="https://live.staticflickr.com/65535/50322787258_a10c5862cc_w.jpg" alt="Technical Documentation Page Thumbnail" id="techdoc" /><br>Technical Documentation Page</a>
+</div>
+<div class="project-tile">
+<a href="https://codepen.io/snowyPigeon/full/Prgdyy"><img src="https://live.staticflickr.com/65535/50323453901_5aaa92e823_w.jpg" alt="HTML Form Thumbnail" id="htmlform" /><br>HTML Form</a>
+</div>
+<div class="project-tile">
+<a href="https://codepen.io/snowyPigeon/full/oKNyxg"><img src="https://live.staticflickr.com/65535/50323453916_f93f6b4784_w.jpg" alt="Landing Page Thumbnail" id="landingpage" /><br>Landing Page</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h1>Drop me a line...</h1>
+<div id="snowy"><img src="https://live.staticflickr.com/65535/50316452741_f45fe5ced8.jpg" alt="image of pigeon with blue sky" id="pigeon"/></div>
+<div id="colab-accounts">
+<p>If you would like to discuss a project or web development in general, say hi to snowypigeon at yahoo dot com.</p>
+<p>Alternatively, you can follow me on <a href="https://gitlab.com/snowyPigeon" target="_blank">GitLab</a>, and <a href="https://github.com/snowyPigeon" target="_blank">GitHub</a>.</p>
+</div>
+<hr>
+<p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/28646175@N00/474381889">"White Pigeon"</a><span>by <a href="https://www.flickr.com/photos/28646175@N00">jambe</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC 2.0</a><a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="cc-icon"/><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="cc-icon"/><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="cc-icon"/></a></p>
+<p>Last updated 5th August 2019</p>
+</section>
+</body>
+</html>
